@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Google Maps API</title>
+</head>
+<body>
+
+<p>現在地</p>
+
+<div id="map" style="width:800px; height:800px"></div>
+
+
+<script type="text/javascript">
+
+    // The following example creates a marker in Stockholm, Sweden using a DROP
+    // animation. Clicking on the marker will toggle the animation between a BOUNCE
+    // animation and no animation.
+
+    var marker;
+
+    function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: {lat: 35.6608899, lng: 139.7279455}
+        });
+
+       //複数 pin
+       marker = new google.maps.Marker({
+            map: map,
+            draggable: true,
+            animation: google.maps.Animation.DROP,
+            position: {lat: 35.6608899, lng: 139.7279455}
+       });
+        marker1 = new google.maps.Marker({
+            map: map,
+            draggable: true,
+            animation: google.maps.Animation.DROP,
+            position: {lat: 35.6585555, lng: 139.7050756}
+        });
+        marker2 = new google.maps.Marker({
+            map: map,
+            draggable: true,
+            animation: google.maps.Animation.DROP,
+            position: {lat: 35.6553618, lng: 139.7365026}
+        });
+        marker3 = new google.maps.Marker({
+            map: map,
+            draggable: true,
+            animation: google.maps.Animation.DROP,
+            position: {lat: 35.6505144, lng: 139.7219856}
+        });
+        marker4 = new google.maps.Marker({
+            map: map,
+            draggable: true,
+            animation: google.maps.Animation.DROP,
+            position: {lat: 35.6711839, lng: 139.7354366}
+        });
+        marker5 = new google.maps.Marker({
+            map: map,
+            draggable: true,
+            animation: google.maps.Animation.DROP,
+            position: {lat: 35.6664449, lng: 139.7132646}
+        });
+        marker6 = new google.maps.Marker({
+            map: map,
+            draggable: true,
+            animation: google.maps.Animation.DROP,
+            position: {lat: 35.6585928, lng: 139.7454414}
+        });
+        marker7 = new google.maps.Marker({
+            map: map,
+            draggable: true,
+            animation: google.maps.Animation.DROP,
+            position: {lat: 35.6629495, lng: 139.7458353}
+        });
+        marker8 = new google.maps.Marker({
+            map: map,
+            draggable: true,
+            animation: google.maps.Animation.DROP,
+            position: {lat: 35.6740575, lng: 139.7409107}
+        });
+
+        marker.addListener('click', toggleBounce);
+        marker1.addListener('click', toggleBounce);
+        marker2.addListener('click', toggleBounce);
+        marker3.addListener('click', toggleBounce);
+        marker4.addListener('click', toggleBounce);
+        marker5.addListener('click', toggleBounce);
+        marker6.addListener('click', toggleBounce);
+        marker7.addListener('click', toggleBounce);
+        marker8.addListener('click', toggleBounce);
+    }
+
+    function toggleBounce() {
+        if (marker.getAnimation() !== null) {
+            marker.setAnimation(null);
+        } else {
+            marker.setAnimation(google.maps.Animation.BOUNCE);
+        }
+    }
+
+//    function initMap() {
+//        var opts1 = {
+//            zoom: 15,
+//            center: new google.maps.LatLng(35.6608899,139.7279455)
+//        };
+//
+//        var map1 = new google.maps.Map(document.getElementById("map1"), opts1);
+//
+//        setMarkers(map);
+//
+//    }
+</script>
+
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvPLLKE6WGS0cb7FuLYaAmZgr1eacpXBQ&callback=initMap">
+</script>
+</body>
+</html>

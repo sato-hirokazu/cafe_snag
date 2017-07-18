@@ -1,0 +1,16 @@
+current directory: /Users/hsato/src/cafe_sns/vendor/bundle/ruby/2.4.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+/Users/hsato/.rbenv/versions/2.4.0/bin/ruby -r ./siteconf20170410-62770-d4ewyj.rb extconf.rb
+creating Makefile
+
+current directory: /Users/hsato/src/cafe_sns/vendor/bundle/ruby/2.4.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR=" clean
+
+current directory: /Users/hsato/src/cafe_sns/vendor/bundle/ruby/2.4.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR="
+compiling ruby_http_parser.c
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.bundle
+
+current directory: /Users/hsato/src/cafe_sns/vendor/bundle/ruby/2.4.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 ruby_http_parser.bundle ./.gem.20170410-62770-1x7v20g

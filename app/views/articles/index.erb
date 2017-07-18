@@ -1,0 +1,54 @@
+<div class="ui inverted masthead centered segment">
+  <div class="ui page grid">
+    <div class="column">
+
+      <div class="ui secondary pointing menu">
+        <a class="active item">
+          <i class="flaticon-home"></i> Home
+        </a>
+        <div class="right menu">
+          <div class="item">
+            <div class="ui icon input">
+
+            </div>
+
+          </div>
+          <a class="ui item">
+            Logout
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="comment-view">
+  <div id="comments">
+  <% @articles.each do |comment| %>
+    <div class="chat-box">
+      <div class="chat-face">
+        <img src="" alt="自分のチャット画像です。" width="90" height="90">
+      </div>
+      <div class="chat-area">
+        <div class="chat-hukidashi">
+          <%= comment.content %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+  </div>
+</div>
+
+<div class="comment-form">
+  <input type="text" id="user-name” placeholder="” /><br />
+  <textarea id="comment-body"/>
+
+  </textarea>
+  <br />
+
+  <input id="submit-comment" type="button" value="コメントする" />
+</div>
+
+<div class="ui inverted footer vertical segment center">
+
+</div>
