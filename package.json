@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/hitomedia/cafe_sns#readme",
   "devDependencies": {
-    "browser-sync": "^2.18.8",
+    "browser-sync": "^3.0.0",
     "coffee-script": "^1.12.4",
     "del": "^2.2.2",
     "gulp": "^3.9.1",
