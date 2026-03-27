@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'sinatra', require: 'sinatra/base'
-gem 'activerecord', '~> 6.0', '>= 6.1.7.1', :require => 'active_record'
+gem 'activerecord', '~> 4.0', '>= 4.2.11.3', :require => 'active_record'
 gem 'sinatra-activerecord', :require => 'sinatra/activerecord'
 gem 'sinatra-contrib'
 gem 'rake'
